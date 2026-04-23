@@ -1,0 +1,54 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(201, 162, 39, 0.18);
+  border-radius: 26px;
+  padding: 22px;
+  box-shadow: 0 12px 34px rgba(150, 117, 21, 0.09);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  color: #8d6d16;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.5;
+  color: #775f25;
+}
+
+.card button {
+  margin-top: auto;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #f2d062 0%, #b98700 100%);
+  color: white;
+  font-weight: 700;
+}
+
+.card button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1080px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

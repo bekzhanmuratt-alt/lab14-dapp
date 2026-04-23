@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# env
+.env
+.env.local
+
+# build
+.next/
+dist/
+artifacts/
+cache/
+
+# misc
+coverage/
